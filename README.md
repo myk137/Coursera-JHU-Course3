@@ -1,4 +1,4 @@
-# Coursera-JHU-Course3-
+## Description of how code written run_analysis.R file works
 
 STEP 1
 
