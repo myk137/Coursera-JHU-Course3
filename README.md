@@ -1,6 +1,6 @@
 ## Description of how code written in run_analysis.R file works
 
-STEP 1
+### STEP 1
 
 'subject_test', 'subject_train', 'x_test', 'y_test', 'x_train', 'y_train', 'features' and 'activity_labels' read all the given text files data using read.table() function.
 
@@ -12,7 +12,7 @@ Above dataframes are merged row wise to form 'merged_dataset' using rbind() func
 
 
 
-STEP 2
+### STEP 2
 
 'feature' is a logical vector which has true values for rows in 'features' data which contain 'mean' and 'std' strings. This is done using grepl() function.
 
@@ -29,13 +29,13 @@ After this 'ext_data' is converted to dataframe class.
 
 
 
-STEP 3
+### STEP 3
 
 for loop is used to fill 'activity column' data in 'merged_dataset' by picking activity names from 'activity_labels' dataset. 
 
 
 
-STEP 4
+### STEP 4
 
 for loop is used to rename column names of 'merged_dataset' by picking variable names from 'features' dataset.
 
@@ -43,7 +43,7 @@ make.names() function is used to make syntactically valid column names of 'merge
 
 
 
-STEP 5
+### STEP 5
 
 arrange() function orders 'subject' data in 'merged_dataset' in chronological order from 1 to 6, and when subject value is same e.g. '1', then it orders 'activity' data in alphabetical order.
 
