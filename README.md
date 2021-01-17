@@ -49,4 +49,6 @@ arrange() function orders 'subject' data in 'merged_dataset' in chronological or
 
 group_by() function groups the different combinations of 'subject' and 'activity' data in 'merged_dataset'. Grouping doesn't changes how the data looks.  
 
-summarise(across()) function creates a tidy dataset containing average of each variable for each activity and each subject by transforming 'merged_dataset'.
+summarise(across()) function creates a tidy dataset containing average of each variable for each activity and each subject by transforming 'merged_dataset'. This tidy dataset is stored in 'result' variable.
+
+write.table() function is used to save the above tidy dataset in a text document named as result.txt
